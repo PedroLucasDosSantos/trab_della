@@ -5,6 +5,7 @@ No âmbito deste projeto,foi desenvolvito um autômato AFNE-e   utilizando  a li
 Em outras palavras, este autômato aceita qualquer palavra que tiver  a subpalavra abc no inicio ,meio ou final da sequência;
 
 #Funcionamento do código
+
 1-Inicialmente o main.py recebe o arquivo data.json contendo os estados, e as transições,estado inical e final;
 
 2-Segundamente a acontece um  calculo de transições vazias que considera todas as  transições vazias  para determinar até onde estado consegue chegar através delas;
