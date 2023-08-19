@@ -23,6 +23,7 @@ python main.py data.json test_input.csv test_output.csv
 
 arquivo test_output.csv
 Palavra de Entrada;Resultado Esperado;Resultado Obtido;Tempo de Execução
+
 aacbb;1;aceito;0.0
 ccaa;0;nao_aceito;0.0
 bca;0;nao_aceito;0.0
