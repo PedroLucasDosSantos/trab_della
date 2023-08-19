@@ -1,3 +1,3 @@
 # trab_della
 Trabalho Autômatos
-O 
+O este autômato é AFNE-e que quando 
