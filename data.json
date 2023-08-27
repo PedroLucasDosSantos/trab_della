@@ -1,34 +1,29 @@
 {
-  "states": ["q0", "q1", "q2", "q3", "q4", "q5"],
+  "states": [
+    { "name": "q0" },
+    { "name": "q1" },
+    { "name": "q2" },
+    { "name": "q3" },
+    { "name": "q4" },
+    { "name": "q5" }
+  ],
   "alphabet": ["a", "b", "c"],
-  "transitions": {
-    "q0": {
-      "a": ["q1"],
-      "": ["q5"]
-    },
-    "q1": {
-      "": ["q2"],
-      "a": ["q1"],
-      "b": ["q1"]
-    },
-    "q2": {
-      "": ["q3"],
-      "c": ["q2"]
-    },
-    "q3": {
-      "": ["q4"],
-      "b": ["q4"]
-    },
-    "q4": {
-      "": ["q4"],
-      "a": ["q4"],
-      "b": ["q4"],
-      "c": ["q4"]
-    },
-    "q5": {
-      "c": ["q2"]
-    }
-  },
+  "transitions": [
+    { "from": "q0", "read": "a", "to": "q1" },
+    { "from": "q0", "read": "", "to": "q5" },
+    { "from": "q1", "read": "", "to": "q2" },
+    { "from": "q1", "read": "a", "to": "q1" },
+    { "from": "q1", "read": "b", "to": "q1" },
+    { "from": "q2", "read": "", "to": "q3" },
+    { "from": "q2", "read": "c", "to": "q2" },
+    { "from": "q3", "read": "", "to": "q4" },
+    { "from": "q3", "read": "b", "to": "q4" },
+    { "from": "q4", "read": "", "to": "q4" },
+    { "from": "q4", "read": "a", "to": "q4" },
+    { "from": "q4", "read": "b", "to": "q4" },
+    { "from": "q4", "read": "c", "to": "q4" },
+    { "from": "q5", "read": "c", "to": "q2" }
+  ],
   "startState": "q0",
   "acceptStates": ["q4"]
 }
